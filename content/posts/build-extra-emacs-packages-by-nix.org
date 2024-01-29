@@ -1,0 +1,106 @@
+#+title: Build extra Emacs packages by Nix
+#+date: <2024-01-28 Sun>
+
+I currently manage my Emacs configuration by [[https://github.com/nix-community/emacs-overlay/tree/master][emacs overlay]]. It will handle the packages from ELPA/MELPA automatically by scan your =use-package= settings.
+
+However, I need some packages outside official package repository, I have to pack it up to nix store by my self. Such as:
++ [[https://raw.githubusercontent.com/emacsmirror/emacswiki.org/master/cursor-chg.el][cursor-chg]] Which change your cursor size from bar to beam while you are typing
++ [[https://github.com/manateelazycat/popweb][popweb]] for looking up Collins dictionary online.
+
+
+[[/images/emacs.jpg]]
+
+As other documentation from Nix, the guide is really terse, it supposes you have a fair knowledge on Nix, and is a little bit confusing for newbies. Here is what I have it done.
+* cursor-chg
+This is a code snippet from my home manager configuration.
+#+begin_src nix
+{ inputs, config, pkgs, lib, ...}:
+
+with lib; let
+  inherit (pkgs) fetchurl;
+
+  chgcursor-el = pkgs.emacsPackages.trivialBuild rec {
+    pname = "cursor-chg";
+    version = "1.0";
+    src = fetchurl {
+      url = "https://raw.githubusercontent.com/emacsmirror/emacswiki.org/master/cursor-chg.el";
+      sha256 = "1zmwh0z4g6khb04lbgga263pqa51mfvs0wfj3y85j7b08f2lqnqn";
+    };
+  };
+in {
+  home.packages = with pkgs; [
+    chgcursor-el
+  ];
+}
+#+end_src
+
+Get the =sha256= verification code by:
+#+begin_src shell
+nix-prefetch-url https://raw.githubusercontent.com/emacsmirror/emacswiki.org/master/cursor-chg.el
+#+end_src
+
+It will print out the sha256 hash code:
+#+RESULTS:
+: 1zmwh0z4g6khb04lbgga263pqa51mfvs0wfj3y85j7b08f2lqnqn
+* Popweb
+It is a little tricky to pack the popweb, because it has an abnormal structure. The final snippet is like this:
+#+begin_src nix
+{ inputs, config, pkgs, lib, ...}:
+
+with lib; let
+  inherit (pkgs) fetchFromGitHub;
+
+  popweb = pkgs.emacsPackages.trivialBuild rec {
+    pname = "popweb";
+    version = "1.0";
+    src = fetchFromGitHub {
+      owner = "fymen";
+      repo = "popweb";
+      rev = "2e2662f987e4638c5c5fc5cdfb4347565f74300b";
+      sha256 = "132gcymzsaaryyk4nglv9pwmdrnspdn4r1ayjbh0mqg6xf9w7mvk";
+    };
+
+    preBuild = ''
+    cp extension/dict/* ./
+    '';
+    postInstall = ''
+    LISPDIR=$out/share/emacs/site-lisp
+    install *.py $LISPDIR
+    install *.js $LISPDIR
+    '';
+  }
+in {
+  home.packages = with pkgs; [
+    popweb
+  ];
+}
+#+end_src
+
+As the code, I have done three things to make it work:
++ Patch the source code from [[https://github.com/manateelazycat/popweb][original author]] to disable the HiDPI environment support, because it can't pass the Emacs compilation. And I think it is better to let the Operating System do this job.
++ Add Collins dictionary support. It is a good English dictionary, better than those built in popweb-dict.
++ Copy the out the source files from =extension/dict/=, and install Python and Javascript file around Elisp files.
+
+Don't forget the python packages that popweb rely on:
+#+begin_src nix
+{pkgs, windowSystem, config, ...}:
+
+let
+  my-python-packages = python-packages:
+    with python-packages; [
+      pyqt6
+      pyqt6-sip
+      pyqt6-webengine
+      epc
+      sexpdata
+      browser-cookie3
+    ];
+  python-with-my-packages = pkgs.python3.withPackages my-python-packages;
+in {
+  home.packages = with pkgs; [
+    python-with-my-packages
+  ];
+}
+#+end_src
+
+The hacked source code of popweb: https://github.com/fymen/popweb
