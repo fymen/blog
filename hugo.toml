@@ -1,6 +1,4 @@
-# baseurl = "https://fengmao.netlify.app"
-baseurl = "http://localhost:1313"
-
+baseurl = "https://fengmao.netlify.app"
 title = "Caterpillar in the tree"
 theme = "etch"
 languageCode = "en-US"
