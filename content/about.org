@@ -1,4 +1,3 @@
 #+title: about
 
-
-Hello, it is me.
+Hey, it's me, nobody from nowhere!
