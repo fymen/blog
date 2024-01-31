@@ -8,7 +8,7 @@ However, I need some packages outside official package repository, I have to pac
 + [[https://github.com/manateelazycat/popweb][popweb]] for looking up Collins dictionary online.
 
 #+DOWNLOADED: screenshot @ 2024-01-30 21:02:07
-[[file:../../static/images/build-extra-emacs-packages-by-nix/2024-01-30_21-02-07_screenshot.png]]
+[[file:/images/build-extra-emacs-packages-by-nix/2024-01-30_21-02-07_screenshot.png]]
 
 As other documentation from Nix, the guide is really terse, it supposes you have a fair knowledge on Nix, and is a little bit confusing for newbies. Here is what I have it done.
 * cursor-chg
