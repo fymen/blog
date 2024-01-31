@@ -76,7 +76,7 @@ in {
 }
 #+end_src
 
-As the code, I have done three things to make it work:
+As the code, I have taken three steps to make it work:
 + Patch the source code from [[https://github.com/manateelazycat/popweb][original author]] to disable the HiDPI environment support, because it can't pass the Emacs compilation. And I think it is better to let the Operating System do this job.
 + Add Collins dictionary support. It is a good English dictionary, better than those built in popweb-dict.
 + Copy the out the source files from =extension/dict/=, and install Python and Javascript file around Elisp files.
