@@ -20,8 +20,14 @@
           nativeBuildInputs = with pkgs; [
             hugo
           ];
-        };
+          shellHook = ''
+          export MY_IMG_DOWNLOAD_DIR=$(pwd)/static/images/
 
+          if [ -z "$(ls -A ./themes/etch/)" ]; then
+             git clone --recurse-submodules https://github.com/LukasJoswiak/etch.git themes/etch
+          fi
+          '';
+        };
       };
       flake = {
         # The usual flake attributes can be defined here, including system-

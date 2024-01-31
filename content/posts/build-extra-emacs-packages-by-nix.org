@@ -7,8 +7,8 @@ However, I need some packages outside official package repository, I have to pac
 + [[https://raw.githubusercontent.com/emacsmirror/emacswiki.org/master/cursor-chg.el][cursor-chg]] Which change your cursor size from bar to beam while you are typing
 + [[https://github.com/manateelazycat/popweb][popweb]] for looking up Collins dictionary online.
 
-
-[[/images/emacs.jpg]]
+#+DOWNLOADED: screenshot @ 2024-01-30 21:02:07
+[[file:../../static/images/build-extra-emacs-packages-by-nix/2024-01-30_21-02-07_screenshot.png]]
 
 As other documentation from Nix, the guide is really terse, it supposes you have a fair knowledge on Nix, and is a little bit confusing for newbies. Here is what I have it done.
 * cursor-chg
