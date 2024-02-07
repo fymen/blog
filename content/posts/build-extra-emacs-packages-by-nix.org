@@ -103,4 +103,7 @@ in {
 }
 #+end_src
 
+
+The final code: https://github.com/fymen/play-with-nixOS/blob/master/home/modules/emacs/default.nix
+
 The hacked source code of popweb: https://github.com/fymen/popweb
