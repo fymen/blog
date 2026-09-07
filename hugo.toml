@@ -2,17 +2,17 @@ baseurl = "https://fengmao.netlify.app"
 title = "不正经拳论"
 author = ""
 canonifyurls = true
-locale = "en"
+locale = "cn"
 theme = "black-and-light"
 
 pygmentsstyle       = "bw"
 pygmentscodefences  = true
 
 [params]
-  sitename = "Black & Light"
+  sitename = "不正经拳论"
   disableWebFonts = false
 
 [[menu.main]]
-    name = "About"
+    name = ""
     url  = ""
 
