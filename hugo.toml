@@ -1,14 +1,14 @@
 baseurl = "https://fengmao.netlify.app"
-title = "Caterpillar in the tree"
+title = "不正经拳论"
 theme = "etch"
-languageCode = "en-US"
+languageCode = "zh-CN"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  description = "Fake it till you make it..."
-  copyright = "Copyright © 2024 Oscar Qi"
+  description = "传统内家拳术探讨"
+  copyright = "Copyright © 2026"
   dark = "auto"
   highlight = true
 
