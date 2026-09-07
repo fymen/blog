@@ -1,7 +1,7 @@
 baseurl = "https://fengmao.netlify.app"
 title = "不正经拳论"
 theme = "etch"
-languageCode = "zh-CN"
+languageCode = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
