@@ -1,7 +1,7 @@
 baseurl = "https://fengmao.netlify.app"
 title = "不正经拳论"
 theme = "etch"
-languageCode = "en-US"
+locale = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
@@ -33,3 +33,6 @@ pygmentsUseClasses = true
 [markup.goldmark.renderer]
   # Allows HTML in Markdown
   unsafe = true
+
+[build.environment]
+  HUGO_VERSION = "v0.162.1"  # 替换为你需要的 Hugo 版本号
