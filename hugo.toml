@@ -1,38 +1,23 @@
 baseurl = "https://fengmao.netlify.app"
 title = "不正经拳论"
-theme = "etch"
-locale = "en-US"
-enableInlineShortcodes = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+author = ""
+canonifyurls = true
+languagecode = "en"
+theme = "black-and-light"
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
 
 [params]
-  description = "传统内家拳术探讨"
-  copyright = "Copyright © 2026"
-  dark = "auto"
-  highlight = true
+  sitename = "Black & Light"
+  disableWebFonts = false
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
-    weight = 20
-
-[permalinks]
-  posts = "/:title/"
-
-[markup.goldmark.renderer]
-  # Allows HTML in Markdown
-  unsafe = true
-
-[build.environment]
-  HUGO_VERSION = "v0.162.1"  # 替换为你需要的 Hugo 版本号
+[[menu.main]]
+    name = "About"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Projects"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
+[[menu.main]]
+    name = "Resume"
+    url  = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
