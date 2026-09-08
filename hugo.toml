@@ -1,4 +1,4 @@
-baseURL = "https://buzhengjingquanlun.com/"
+baseURL = "https://www.buzhengjingquanlun.com/"
 locale = 'zh-cn'
 title = "不正经拳论"
 
@@ -47,9 +47,9 @@ ignoreFiles = ['content/not_ready', 'content/.obsidian/*', 'content/__snippets/*
     # - coolBlur 默认为 6px ，背景色彩模糊度，数值越大越模糊
     hasActiveCool = true
     coolBackground = 'color.jpg'
-    coolOpacity = 0.69 # 0.86
-    coolSaturate = '180%'
-    coolBlur = '6px'
+    coolOpacity = 0.8 # 0.86
+    coolSaturate = '100%'
+    coolBlur = '8px'
     
     # 首页图片/文字
     [params.img]
