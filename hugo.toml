@@ -1,5 +1,5 @@
 baseURL = "https://quanlun.netlify.app"
-languageCode = 'zh-cn'
+locale = 'zh-cn'
 title = "不正经拳论"
 
 # 启用主题
@@ -96,7 +96,7 @@ ignoreFiles = ['content/not_ready', 'content/.obsidian/*', 'content/__snippets/*
 
         [params.contact.config]
             color = '#696969'                         # 图标颜色，默认为浅灰色
-            slogan = '做最好的自己'                               # 联系标语，不想显示，可以置空
+            slogan = ''                               # 联系标语，不想显示，可以置空
             # isShowNavLink = true                      # 是否在联系栏左侧显示快捷导航链接（PS：站点首页总会显示）
             target = '_self'                          # 定义左侧快捷导航链接打开方式，_blank 在新标签页 _self 在当前标签页
             ship = ''                                 # 联系栏 icon ，允许自定义该图标链接（/ship 为外链的个人定制化搜索页）；隐藏，设置为 '' 空即可
@@ -119,7 +119,7 @@ ignoreFiles = ['content/not_ready', 'content/.obsidian/*', 'content/__snippets/*
     # 在 https://giscus.app/ 中，选择配置后会自动生成，如 data-*
     # 默认开启 data-loading="lazy"
     [params.giscus]
-        active = true                             # 是否启用评论插件
+        active = false                             # 是否启用评论插件
         repo = "loveminimal/comment"              # 输入你的仓库名称
         repoId = "R_kgDOJNJQ8g"
         category="General"
