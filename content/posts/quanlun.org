@@ -1,5 +1,7 @@
-#+title: 不正经拳论
+#+title: 拳论正文
 #+date: <2026-09-07 星期一>
+
+#+options: toc:t title:t num:t
 
 * 形意拳
 从无极式开始，一步一步讲解孙氏形意拳。
