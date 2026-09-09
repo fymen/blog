@@ -65,7 +65,7 @@ ignoreFiles = ['content/not_ready', 'content/.obsidian/*', 'content/__snippets/*
         # ！ 为保证显示效果，建议选用 1：1 比例图片
         # src = 'cat.svg'
         src = 'logo.png'
-
+        width = 80
         background = '#0003'
         # 为该图片附加一个点击链接功能，缺省为 `/about`，当然
         # 你也可以定义为任何你相要的超链接
