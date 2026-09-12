@@ -1,6 +1,9 @@
 #+title: 关于
 #+date: <2026-09-08 二>
 不正经拳论官方网站。
-
+* 电子书
 下载最新电子版请至：
 https://www.buzhengjingquanlun.com/wiki/
+* 关注我
+| 抖音                       | 微信视频号                  |
+| [[file:assets/id_douyin.jpg]] | [[file:assets/id_wechat.jpg]] |
