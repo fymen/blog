@@ -78,8 +78,8 @@ ignoreFiles = ['content/not_ready', 'content/.obsidian/*', 'content/__snippets/*
         # beiancode = ''                                                  # 公安备案识别码
         # github_user = 'loveminimal'                                     # Github 用户名，导航页 github 小组件使用
 
-        douyin = 'imgs/bg/id_douyin.jpg'
-        wechat = 'imgs/bg/id_wechat.jpg'
+        douyin = 'https://buzhengjingquanlun.com/contacts/'
+        #wechat = 'imgs/bg/id_wechat.jpg'
         # weibo = 'https://weibo.com/u/6867589681'
         # zhihu = 'https://www.zhihu.com/people/loveminimal'
         # jianshu = 'https://www.jianshu.com/u/eebcc2974936'

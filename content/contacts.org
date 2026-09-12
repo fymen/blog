@@ -1,0 +1,6 @@
+#+title: 关注我
+#+date: <2026-09-08 二>
+| 抖音                       | 微信视频号                  |
+| [[file:assets/id_douyin.jpg]] | [[file:assets/id_wechat.jpg]] |
+
+
