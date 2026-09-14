@@ -17,7 +17,7 @@ ignoreFiles = ['content/not_ready', 'content/.obsidian/*', 'content/__snippets/*
 [params]
     dark = false                            # 默认开启暗色主题
     author = 'Oscar Qi'
-    slogan = '拳术之道，首重中和，中和之外，无元妙也'  # 'Life is just a joker.'
+    slogan = '抖音等平台审查比较严重，这里会发一些未经和谐的原始版本'  # 'Life is just a joker.'
     startDate = 2024                        # 'Copyright © 2016 - now'
     # 激活页面加载时的过渡动画
     hasActiveAnimate = true
