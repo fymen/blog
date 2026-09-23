@@ -6,8 +6,7 @@
 采取自愿付款方式，扫码付款后请保留付款凭证，将来可用于获取电子书更新和其他相关的服务，谢谢！
 
 
-| 支付宝                   | 微信                    |
-| [[file:assets/pay_ali.jpg]] | [[file:assets/pay_wx.jpg]] |
+| [[file:assets/pay_wx.jpg]] | [[file:assets/pay_ali.jpg]] |
 
 * 获取方式
 ** kzwr网盘免登录直接下（推荐）
