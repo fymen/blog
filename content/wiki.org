@@ -9,6 +9,12 @@
 | 支付宝                   | 微信                    |
 | [[file:assets/pay_ali.jpg]] | [[file:assets/pay_wx.jpg]] |
 
+* 获取方式
+** kzwr网盘免登录直接下（推荐）
+手机版：https://www.kzwr.com/file/99c47cb5?simple=1
 
+电脑版：https://www.kzwr.com/file/da3e9a39?simple=1
+** 百度网盘
 电子书下载链接: https://pan.baidu.com/s/1jqnKZ9T_MANbG01yPlsYwg 提取码: h3xt
+
 
