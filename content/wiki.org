@@ -1,20 +1,26 @@
 #+title: 电子书下载
 #+date: <2026-09-23 三>
 
-电子书定价人民币三元一套，电脑版和手机版本各一本。
-
-采取自愿付款方式，你可以先下载，觉得受益了再付款。
-
-
-| [[file:assets/pay_wx.jpg]] | [[file:assets/pay_ali.jpg]] |
-
 * 获取方式
 
-电子书版本已经更新至2026年10月4日
+** 正式版本
+正式版本于10月20日正式发布。本书将不再增加新章节，只做局部修订。
 
-** kzwr网盘免登录直接下（推荐）
+正式版定价为人民币十元一套，将不再采取自愿付款的方式，请各位移步淘宝小店购买，谢谢！
+
+https://item.taobao.com/item.htm?abbucket=0&id=1091469715447&mi_id=0000EDyGgsd4hHcFvkdSPFLMCY52hPCXI6uof2DZMVwmtEM&ns=1&spm=a21xtw.29978516.product_shelf.1.51d43c25TrnYwO&xxc=taobaoSearch
+
+
+
+** 10月4日版本
+你仍然可以在这里下载以前的版本：
+#+begin_comment
+| [[file:assets/pay_wx.jpg]] | [[file:assets/pay_ali.jpg]] |
+#+end_comment
+
+*** kzwr网盘免登录直接下（推荐）
 手机版：https://www.kzwr.com/file/374498b4?simple=1
 
 电脑版：https://www.kzwr.com/file/d8d977aa?simple=1
-** 百度网盘
+*** 百度网盘
 链接: https://pan.baidu.com/s/1SDrJkJ6PLzhEEbImfNJFjQ 提取码: 8jkd 
